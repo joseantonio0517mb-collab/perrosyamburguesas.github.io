@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venta de Perros Calientes y Hamburguesas</title>
+
+  <!-- ICONOS ORIGINALES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- ARCHIVO CSS EXTERNO -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌭 Venta de Perros Calientes</h1>
+  <p>¡Cinco estilos irresistibles, hechos con amor!</p>
+</header>
+
+<!-- BOTÓN SUBMENÚ PERROS -->
+<button class="submenu-button" onclick="toggleMenu('menuPerros')">
+  📌 Ver Submenú Perros Calientes
+</button>
+
+<!-- SUBMENÚ PERROS -->
+<div id="menuPerros" class="submenu-content">
+  <h2>Submenú de Perros Calientes</h2>
+  <ul>
+    <li><h3>Clásico</h3>Pan 60g, Salchicha 90g, Mostaza 10g, Ketchup 15g, Papas 20g</li>
+    <li><h3>Americano</h3>Pan 60g, Salchicha 100g, Chili 80g, Cebolla 20g, Cheddar 25g</li>
+    <li><h3>Mexicano</h3>Guacamole 40g, Jalapeños 15g, Pico de gallo 40g</li>
+    <li><h3>Italiano</h3>Mozzarella 40g, Marinara 50g, Pimientos 30g</li>
+    <li><h3>Gourmet</h3>Bacon 25g, Aguacate 40g, Cebolla caramelizada 35g</li>
+  </ul>
+</div>
+
+<!-- TARJETAS PERROS -->
+<div class="container">
+  <div class="card"><img src="https://img.freepik.com/psd-premium/perro-caliente-clasico-ketchup-salsa-mostaza-zapiekanka-sabrosa-cebolla-perro-caliente-aislado-fondo_1056883-19964.jpg"><h3>Clásico</h3><p>$8.000</p></div>
+
+  <div class="card"><img src="https://img.freepik.com/fotos-premium/perro-caliente-americano-tradicional-salchicha-parrilla-mostaza-aislado-sobre-fondo-negro_124507-59360.jpg"><h3>Americano</h3><p>$10.000</p></div>
+
+  <div class="card"><img src="https://polloseldorado.co/wp-content/uploads/2023/07/Imagenes-2-1024x536.jpg"><h3>Mexicano</h3><p>$11.000</p></div>
+
+  <div class="card"><img src="https://mui.kitchen/__export/1617556782030/sites/muikitchen/img/2021/04/04/perro-caliente.jpg_402197180.jpg"><h3>Italiano</h3><p>$12.000</p></div>
+
+  <div class="card"><img src="https://img.freepik.com/foto-gratis/perrito-caliente-ternera-parrilla-gourmet-acompanamientos-papas-fritas-deliciosos-sencillos-hot-dogs-mostaza-pimiento-cebolla-nachos-perritos-calientes-completamente-cargados-ingredientes-variados-tabla-remo_1150-44657.jpg"><h3>Gourmet</h3><p>$13.000</p></div>
+</div>
+
+<!-- SECCIÓN HAMBURGUESAS -->
+<section class="hamburguesas">
+
+  <header style="text-align:center; padding:20px;">
+    <h2>🍔 Venta de Hamburguesas</h2>
+  </header>
+
+  <!-- BOTÓN SUBMENÚ HAMBURGUESAS -->
+  <button class="submenu-button" onclick="toggleMenu('menuHamburguesas')">
+    📌 Ver Submenú Hamburguesas
+  </button>
+
+  <!-- SUBMENÚ HAMBURGUESAS -->
+  <div id="menuHamburguesas" class="submenu-content">
+    <h2>Submenú de Hamburguesas</h2>
+    <ul>
+      <li><h3>Clásica</h3>Pan 80g, Carne 120g, Cheddar 20g, Lechuga, Tomate</li>
+      <li><h3>BBQ</h3>Carne 130g, Cebolla 25g, Salsa BBQ</li>
+      <li><h3>Mexicana</h3>Guacamole 40g, Jalapeños 15g, Pico de gallo</li>
+      <li><h3>Doble Queso</h3>Dos carnes 240g, cheddar doble</li>
+      <li><h3>Gourmet</h3>Angus 150g, Champiñones, Trufa</li>
+    </ul>
+  </div>
+
+  <!-- TARJETAS HAMBURGUESAS -->
+  <div class="container">
+    <div class="card"><img src="https://simonparrilla.com.co/monteria/wp-content/uploads/2022/06/SIMON-PARRILLA-COMIDAS-RAPIDAS-HAMBURGUESA-CLASICA.webp"><h3>Clásica</h3><p>$14.000</p></div>
+
+    <div class="card"><img src="https://thumbs.dreamstime.com/b/hamburguesa-del-bbq-con-tocino-y-cebollas-71619920.jpg"><h3>BBQ</h3><p>$15.000</p></div>
+
+    <div class="card"><img src="https://ranchera.com.co/wp-content/uploads/2022/12/HAMBURGUESA-MEXICANA-banner-1.png"><h3>Mexicana</h3><p>$16.000</p></div>
+
+    <div class="card"><img src="https://1.bp.blogspot.com/-BcWxrCryoNo/X15OpdUnyRI/AAAAAAAAZXI/xSlzMATK1uwuWWJ4X0oqybSt_MywLZAaACLcBGAsYHQ/s2400/546879213213213.jpg"><h3>Doble Queso</h3><p>$18.000</p></div>
+
+    <div class="card"><img src="https://okdiario.com/img/2021/03/06/4-hamburguesas-gourmet.jpg"><h3>Gourmet</h3><p>$20.000</p></div>
+  </div>
+
+</section>
+
+<!-- ICONOS REDES -->
+<div class="social-bar">
+  <a href="https://wa.me/573166609662" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+</div>
+
+<!-- BOTÓN SUBIR -->
+<button id="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'});">⬆</button>
+
+<script>
+function toggleMenu(id){
+  const menu = document.getElementById(id);
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+</body>
+</html>

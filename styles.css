@@ -1,0 +1,128 @@
+/* ESTILOS GENERALES */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: linear-gradient(180deg, #c20000, #ff4d4d);
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 30px 0;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+}
+
+/* CONTENEDOR */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+/* TARJETAS */
+.card {
+  background: #fff;
+  color: #000;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* BOTONES SUBMENÚ */
+.submenu-button {
+  width: 90%;
+  margin: 20px auto;
+  display: block;
+  padding: 12px;
+  font-size: 1.2rem;
+  background: #fff;
+  color: #c20000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.submenu-button:hover {
+  background: #ffe5e5;
+}
+
+/* CUADROS SUBMENÚ */
+.submenu-content {
+  display: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* SECCIÓN HAMBURGUESAS */
+.hamburguesas {
+  background: linear-gradient(180deg, #800000, #400000);
+  padding-bottom: 40px;
+}
+
+/* ICONOS REDES SOCIALES */
+.social-bar {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-bar a {
+  background: #fff;
+  color: #c20000;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-bar a:hover {
+  transform: scale(1.1);
+  background-color: #ffd6d6;
+}
+
+/* BOTÓN SUBIR */
+#top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #c20000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#top-btn:hover {
+  background-color: #ff1a1a;
+}
